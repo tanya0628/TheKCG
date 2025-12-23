@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khushbu Chauhan Group | Delhi</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root { --orange: #ff6600; --dark: #0a0a0a; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: black; color: #aea5a5; line-height: 1.8; overflow-x: hidden; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header & Navbar */
+/* PERFECT FIXED HEADER – NO EXTRA HEIGHT */
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;                    
+  background: rgba(15, 15, 15, 0.96);
+  backdrop-filter: blur(15px);
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+} */
+
+/* Optional: Shrink header on scroll (very modern) */
+/* header.scrolled {
+  height: 80px;
+  padding: 10px 0;
+  background: rgba(10, 10, 10, 0.98);
+}
+
+nav {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + Text Perfectly Aligned */
+/* .logo-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-area img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 4px solid var(--orange);
+  box-shadow: 0 8px 25px rgba(255, 102, 0, 0.4);
+  transition: all 0.3s;
+}
+
+header.scrolled .logo-area img {
+  width: 58px;
+  height: 58px;
+  
+}
+
+.logo-text h1 {
+  font-size: 18px;
+  color: var(--orange);
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.logo-text span {
+  font-size: 13px;
+  color: #9e8383;
+  display: block;
+  margin-top: 4px; */
+ 
+
+/* Nav Links – Perfect Spacing */
+/* .nav-links {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 10px 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--orange);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--orange);
+  transition: 0.4s;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 90%;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: rgb(189, 183, 183);
+} */
+
+    section { padding: 120px 0; }
+    .section-title {
+      font-size: 48px; color: var(--orange); text-align: center; margin-bottom: 70px;
+      position: relative; padding-bottom: 20px;
+    }
+    .section-title::after {
+      content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 130px; height: 6px; background: var(--orange); border-radius: 3px;
+    }
+
+    .btn {
+      background: var(--orange); color: rgb(201, 78, 78); padding: 18px 45px; border-radius: 50px;
+      text-decoration: none; font-weight: bold; font-size: 19px; margin: 12px;
+      display: inline-block; box-shadow: 0 12px 40px rgba(255,102,0,0.5);
+      transition: 0.4s;
+    }
+    .btn:hover { transform: translateY(-8px); }
+
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;
+    }
+    .card {
+      background: #1a1a1a; padding: 40px; border-radius: 25px; text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6); border-top: 6px solid var(--orange);
+      transition: 0.4s;
+    }
+    .card:hover { transform: translateY(-15px); }
+
+    /* Horizontal Gallery */
+    .gallery-grid {
+      display: flex; overflow-x: auto; gap: 30px; padding: 20px 0;
+      scroll-snap-type: x mandatory; scrollbar-width: thin;
+    }
+    .gallery-grid::-webkit-scrollbar { height: 10px; background: #222; }
+    .gallery-grid::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 10px; }
+
+    .gallery-item {
+      flex: 0 0 340px; height: 280px; border-radius: 25px; overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7); border: 4px solid rgba(255,102,0,0.2);
+    }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+    .gallery-item:hover img { transform: scale(1.2); }
+
+    .md-photo {
+      max-width: 420px; width: 90%; margin: 50px auto; display: block;
+      border-radius: 30px; border: 7px solid var(--orange); box-shadow: 0 25px 60px rgba(255,102,0,0.4);
+    }
+
+    footer {
+      background: #000; padding: 90px 20px 60px; text-align: center; color: #aaa;
+    }
+    .social-icons a {
+      display: inline-block; width: 60px; height: 60px; margin: 0 20px;
+      background: #333; color: white; border-radius: 50%; font-size: 28px;
+      line-height: 60px; transition: 0.4s;
+    }
+    .social-icons a:hover { background: var(--orange); transform: translateY(-12px); }
+
+    /* Phone Button */
+.phone, .whatsapp {
+  position: fixed;
+  right: 30px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 99999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Positions */
+.phone { bottom: 140px; background: #ff5500; }    /* Orange */
+.whatsapp { bottom: 40px; background: #25D366; } /* Green */
+
+/* Icon color */
+.phone i, .whatsapp i {
+  color: #fff;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Blinking Notification Ring */
+.phone::before, .whatsapp::before {
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.6);
+  animation: ring 1.6s infinite;
+}
+
+@keyframes ring {
+  0% { transform: scale(0.7); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* Popup Label */
+.popup-label {
+  position: absolute;
+  right: 90px;
+background-color: #aea5a5;
+  color: #111;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  white-space: nowrap;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+}
+
+/* Show Popup Label on Hover */
+.phone:hover .popup-label,
+.whatsapp:hover .popup-label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-10px);
+}
+
+/* Stop floating animation while hovering */
+.phone:hover,
+.whatsapp:hover {
+  animation: none;
+    transform: scale(1.1);
+}
+
+
+    @media (max-width: 868px) {
+      .nav-links {
+        position: fixed; top: 0; left: -100%; width: 80%; height: 50%;
+        background: rgba(10,10,10,0.98); flex-direction: column; justify-content: center;
+        align-items: center; transition: 0.5s; z-index: 999; gap: 30px;
+      }
+      .nav-links.active { left: 0; }
+      .nav-links a { font-size: 26px; }
+      .menu-toggle { display: block; }
+    }
+
+    
+.welcome-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+   padding: 40px 30px;
+  justify-content: space-between;
+  gap: 35px;
+    margin: 0 auto;
+}
+
+.box {
+  width: 40%;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  border-left: 6px solid hsl(29, 71%, 67%); /* orange accent */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-4px);
+  
+  box-shadow: 0 10px 30px rgba(245, 149, 6, 0.937);
+}
+.middle-image {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #000; 
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 8px 30px rgba(255, 122, 0, 0.25);
+}
+.middle-image img :hover{
+   transform: translateY(-4px);
+  
+  box-shadow: 0 10px 30px rgba(245, 149, 6, 0.937);
+}
+.box h2, .box h3 {
+  color: #000; /* Black */
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.box p {
+  color: #4d4d4d; /* Dark grey */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+@media (max-width: 1020px) {
+  .welcome-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .box, .middle-image {
+    width: 100%;
+  }
+  .middle-image img {
+    max-width: 280px;
+  }
+}
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #000;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.card a {
+  color: orangered;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+ 
+
+ <!-- Vertical Sidebar Navigation -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <img src="khushbu_logo-removebg-preview.png" alt="Khushbu Chauhan Group" style="width: 100px; height: 100px;" class="sidebar-logo">
+    <!-- <div class="logo-text-small">KCG</div> -->
+  </div>
+
+  <!-- 3-Dot Menu Toggle (Visible on Desktop & Mobile) -->
+  <div class="menu-toggle-dots" id="toggleSidebar">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="#home" class="nav-item active"><span>Home</span></a></li>
+      <li><a href="#welcome" class="nav-item"><span>Welcome</span></a></li>
+      <li><a href="#about" class="nav-item"><span>About Us</span></a></li>
+      <li><a href="#group" class="nav-item"><span>Group of Companies</span></a></li>
+      <li><a href="#gallery" class="nav-item"><span>Gallery</span></a></li>
+      <li><a href="#Vision-Mission" class="nav-item"><span>Vision & Mission</span></a></li>
+      <li><a href="#why" class="nav-item"><span>Why Us</span></a></li>
+      <li><a href="#profile" class="nav-item"><span>Company Profile</span></a></li>
+      <li><a href="#services" class="nav-item"><span>Business Services</span></a></li>
+      <li><a href="#contact" class="nav-item"><span>Contact Us</span></a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- Overlay when sidebar is collapsed (optional) -->
+<div class="sidebar-overlay" id="overlay"></div>
+<style>
+  /* Modern Header Styles */
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  /* background: linear-gradient(180deg, #1a1a1a 0%, #111 100%); */
+
+  background-color: transparent;
+  color: #fff;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 8px 0 30px rgba(0,0,0,0.3);
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar-logo {
+  height: 70px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s;
+}
+
+.logo-text-small {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ff6b35; /* Orange */
+  margin-top: 10px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .logo-text-small {
+  opacity: 0;
+}
+
+.sidebar.collapsed .sidebar-logo {
+  height: 50px;
+}
+
+
+/* 3-Dot Toggle */
+.menu-toggle-dots {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  background: #ff6b35;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  z-index: 1001;
+  transition: all 0.3s;
+}
+
+.menu-toggle-dots:hover {
+  background: #e55a2b;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+/* Navigation */
+.sidebar-nav ul {
+  list-style: none;
+  padding: 30px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 24px;
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav-item span {
+  margin-left: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #ff6b35;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: rgba(255, 107, 53, 0.15);
+  color: #ff6b35;
+}
+
+.nav-item:hover::before,
+.nav-item.active::before {
+  transform: scaleY(1);
+}
+
+.sidebar.collapsed .nav-item span {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar.collapsed .nav-item {
+  justify-content: center;
+  padding: 18px 0;
+}
+
+/* Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Main content shift when sidebar open */
+.main-content {
+  margin-left: 280px;
+  transition: margin-left 0.4s;
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: 80px;
+}
+.section1-title{
+  text-align: center;
+  color: orangered;
+
+}
+</style>
+<script>
+document.getElementById('toggleSidebar').addEventListener('click', function() {
+  document.querySelector('.sidebar').classList.toggle('collapsed');
+  document.querySelector('.sidebar-overlay').classList.toggle('active');
+});
+</script>
+  <!-- ALL SECTIONS WITH CORRECT IDs -->
+  <section class="hero" id="home">
+  <div class="container">
+    <h1>“NETWORK IS NETWORTH”</h1>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn" style="color: #000;">Get In Touch</a>
+      <a href="#group" class="btn btn-outline" style="color: #000;">Explore Group of Companies</a>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<!-- WELCOME SECTION – LEFT TEXT + RIGHT PHOTO (Premium Design) -->
+<section id="welcome" style="padding:140px 0; background:linear-gradient(to right, #0a0a0a 50%, #111 50%); position:relative; overflow:hidden;">
+  <!-- Orange Accent Line on Left -->
+  <div style="position:absolute; left:0; top:0; width:8px; height:100%; background:#ff6b00; box-shadow:0 0 30px rgba(255,107,0,0.6);"></div>
+
+  <div class="container">
+    <div style="display:flex; align-items:center; gap:80px; flex-wrap:wrap; max-width:1400px; margin:0 auto;">
+      
+      <!-- LEFT SIDE – CONTENT -->
+      <div style="flex:1; min-width:320px; color:#e0e0e0;">
+        <h2 style="font-size:48px; color:#ff6b00; margin-bottom:25px; font-weight:800; line-height:1.2;">
+          Welcome to <span style="color:#ff9a44;">Khushbu Chauhan Group</span>
+        </h2>
+        
+        <p style="font-size:24px; color:#ff9a44; font-weight:600; margin-bottom:20px; letter-spacing:0.5px;">
+          "Network is Networth"
+        </p>
+
+        <div style="font-size:18px; line-height:2; color:#cccccc; margin-bottom:30px;">
+          <p style="margin-bottom:20px;">
+            Led by our visionary <strong>Managing Director, Ms. Khushbu Chauhan</strong>, we proudly stand as a trusted name in multi-industry excellence — delivering unmatched value across Finance, Real Estate, Entertainment, Travel, Media, and Strategic Consulting.
+          </p>
+          <p>
+            With strategic leadership and a growth-driven mindset, we continue to expand horizons, forge powerful alliances, and create sustainable success through meaningful partnerships.
+          </p>
+        </div>
+
+        <div style="margin-top:35px;">
+          <a href="#contact" class="btn" style="background:#ff6b00; color:white; padding:18px 45px; border-radius:50px; font-size:19px; font-weight:bold; text-decoration:none; display:inline-block; box-shadow:0 15px 40px rgba(255,107,0,0.4); transition:0.4s;">
+            Get In Touch
+          </a>
+          <a href="#group" style="margin-left:20px; padding:18px 45px; border:2px solid #ff6b00; color:#ff6b00; border-radius:50px; font-size:19px; font-weight:bold; text-decoration:none; display:inline-block; transition:0.4s;">
+            Explore Our Group of Companies
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE – PHOTO WITH PREMIUM FRAME -->
+      <div style="flex:1; min-width:320px; text-align:center; position:relative;">
+        <!-- Glowing Orange Border Frame -->
+        <div style="position:relative; display:inline-block;">
+          <div style="position:absolute; inset:-15px; border:3px solid #ff6b00; border-radius:32px; opacity:0.6; filter:blur(8px);"></div>
+          <div style="position:absolute; inset:-8px; border:2px dashed #ff6b00; border-radius:30px; opacity:0.4; animation:rotate 20s linear infinite;"></div>
+          
+          <img src="profile picture.jpg" alt="Ms. Khushbu Chauhan" 
+               style="width:100%; max-width:520px; height:auto; border-radius:28px; 
+                      border:8px solid #ff6b00; box-shadow:0 30px 80px rgba(255,107,0,0.5);
+                      object-fit:cover; transition:transform 0.5s ease;">
+        </div>
+
+        <!-- Floating Badge -->
+        <div style="position:absolute; bottom:-20px; left:50%; transform:translateX(-50%);
+                    background:#ff6b00; color:white; padding:12px 35px; border-radius:50px;
+                    font-weight:bold; font-size:18px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+          MD & Director
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional Rotation Animation for Dashed Border -->
+<style>
+  /* @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  } */
+  
+  /* Responsive Fix */
+  @media (max-width: 992px) {
+    #welcome { padding:100px 0; background:#0a0a0a; }
+    #welcome > div > div > div:first-child { text-align:center; }
+    #welcome img { max-width:420px; }
+  }
+</style>
+
+
+<!-- ABOUT US – PREMIUM & ATTRACTIVE -->
+<section id="about" style="background:#111; padding:140px 0; position:relative; overflow:hidden;">
+  <!-- Subtle Background Pattern -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0.03; pointer-events:none;">
+    <img src="https://i.ibb.co.com/9h6vY4v/pattern.png" alt="" style="width:100%; height:100%; object-fit:cover;">
+  </div>
+
+  <div class="container">
+    <h2 class="section-title" style="color:#ff6b00; font-size:56px;">About Us</h2>
+
+    <!-- Main Intro -->
+    <div style="max-width:1100px; margin:0 auto 80px auto; text-align:center;">
+      <p style="font-size:22px; color:#ff9a44; font-weight:600; letter-spacing:1px; margin-bottom:20px;">
+        Building Trust • Creating Value • Connecting Futures
+      </p>
+      <p style="font-size:18px; color:#cccccc; line-height:2; max-width:900px; margin:0 auto;">
+        Khushbu Chauhan Group is a dynamic multi-sector conglomerate delivering excellence across Finance, Real Estate, Entertainment, Travel, Media, and Strategic Consulting. Founded with integrity and innovation, we build lasting partnerships and sustainable success.
+      </p>
+    </div>
+
+    <!-- 3 Key Pillars with Fine Orange Border & Icons -->
+    <div class="grid" style="gap:50px; margin-top:80px;">
+      
+      <div style="background:#1a1a1a; padding:45px 35px; border-radius:24px; text-align:center; 
+                  border:2px solid transparent; background-clip:padding-box;
+                  position:relative; box-shadow:0 20px 50px rgba(0,0,0,0.6);
+                  transition:all 0.4s ease;">
+        <!-- Fine Orange Border Effect -->
+        <div style="position:absolute; inset:0; border:2px solid #ff6b00; border-radius:24px; opacity:0.7;"></div>
+        <div style="position:absolute; inset:4px; border:1px dashed #ff6b00; border-radius:22px; opacity:0.3;"></div>
+        
+        <i class="fas fa-handshake" style="font-size:52px; color:#ff6b00; margin-bottom:25px;"></i>
+        <h3 style="font-size:26px; color:#ff6b00; margin-bottom:18px;">Trusted Partnerships</h3>
+        <p style="color:#bbbbbb; font-size:16px; line-height:1.8;">
+          We believe in long-term relationships built on transparency, mutual respect, and shared success. Every collaboration is a step toward greatness.
+        </p>
+      </div>
+
+      <div style="background:#1a1a1a; padding:45px 35px; border-radius:24px; text-align:center;
+                  border:2px solid transparent; background-clip:padding-box;
+                  position:relative; box-shadow:0 20px 50px rgba(0,0,0,0.6);
+                  transition:all 0.4s ease;">
+        <div style="position:absolute; inset:0; border:2px solid #ff6b00; border-radius:24px; opacity:0.7;"></div>
+        <div style="position:absolute; inset:4px; border:1px dashed #ff6b00; border-radius:22px; opacity:0.3;"></div>
+        
+        <i class="fas fa-lightbulb" style="font-size:52px; color:#ff6b00; margin-bottom:25px;"></i>
+        <h3 style="font-size:26px; color:#ff6b00; margin-bottom:18px;">Innovative Solutions</h3>
+        <p style="color:#bbbbbb; font-size:16px; line-height:1.8;">
+          From finance to entertainment, we bring cutting-edge strategies and creative thinking to every industry we touch.
+        </p>
+      </div>
+
+      <div style="background:#1a1a1a; padding:45px 35px; border-radius:24px; text-align:center;
+                  border:2px solid transparent; background-clip:padding-box;
+                  position:relative; box-shadow:0 20px 50px rgba(0,0,0,0.6);
+                  transition:all 0.4s ease;">
+        <div style="position:absolute; inset:0; border:2px solid #ff6b00; border-radius:24px; opacity:0.7;"></div>
+        <div style="position:absolute; inset:4px; border:1px dashed #ff6b00; border-radius:22px; opacity:0.3;"></div>
+        
+        <i class="fas fa-globe" style="font-size:52px; color:#ff6b00; margin-bottom:25px;"></i>
+        <h3 style="font-size:26px; color:#ff6b00; margin-bottom:18px;">Pan-India Presence</h3>
+        <p style="color:#bbbbbb; font-size:16px; line-height:1.8;">
+          Headquartered in New Delhi, our influence and network span across the nation, connecting opportunities from coast to coast.
+        </p>
+      </div>
+    </div>
+
+    <!-- MD Message Box -->
+    <div style="max-width:900px; margin:90px auto 0; padding:50px; background:linear-gradient(135deg, #1a1a1a, #111);
+                border-radius:28px; border-left:6px solid #ff6b00; box-shadow:0 25px 70px rgba(255,107,0,0.2);
+                position:relative; overflow:hidden;">
+      <div style="position:absolute; top:0; left:0; width:100%; height:6px; background:#ff6b00;"></div>
+      <div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap; justify-content:center;">
+        <img src="profile picture.jpg" alt="Ms. Khushbu Chauhan" style="width:180px; height:180px; border-radius:50%; 
+             border:6px solid #ff6b00; box-shadow:0 15px 40px rgba(255,107,0,0.4); object-fit:cover;">
+        <div style="flex:1; min-width:300px;">
+          <h3 style="font-size:28px; color:#ff6b00; margin-bottom:15px;">Message from the Founder</h3>
+          <p style="font-size:18px; color:#ff9a44; font-style:italic; margin-bottom:15px;">
+            "In a world of opportunities, it’s not what you know — it’s who you know and how you grow together."
+          </p>
+          <p style="color:#cccccc; font-size:16px; line-height:1.9;">
+            Under my leadership as Managing Director, Khushbu Chauhan Group continues to expand horizons, create value, and turn visions into reality — one powerful connection at a time.
+          </p>
+          <p style="margin-top:20px; color:#ff6b00; font-weight:bold; font-size:18px;">
+            — Ms. Khushbu Chauhan<br>
+            <span style="color:#888; font-weight:normal; font-size:15px;">Managing Director & Visionary Leader</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="group">
+  <div class="container">
+    <h1 class="section1-title">THEKCGINDIA</h1>
+    <h2 class="section-title">Our Group of Companies</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3 style="color: white;">KCTAX WEALTH ADVISOR</h3>
+        <p><strong>Phone:</strong> +91-7827219253</p>
+        <p><strong>Email:</strong> kctaxwealthadvisor@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.kctaxwealth.com" target="_blank">www.kctaxwealth.com</a></p>
+      </div>
+
+      <div class="card">
+        <h3 style="color: white;">FAMEJET STAR ENTERTAINMENT</h3>
+        <p><strong>Phone:</strong> +91-9410286760</p>
+        <p><strong>Email:</strong> famejetstar@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.famejetstar.com" target="_blank">www.famejetstar.com</a></p>
+      </div>
+
+      <div class="card">
+        <h3 style="color: white;">CAMPAIGN WITH LEADERS</h3>
+        <p><strong>Phone:</strong> +91-7599518683</p>
+        <p><strong>Email:</strong> Campaignwithleaders@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.campaignwithleaders.com" target="_blank">www.campaignwithleaders.com</a></p>
+      </div>
+
+      <div class="card">
+        <h3 style="color: white;">TRIP20 HOLIDAYS</h3>
+        <p><strong>Phone:</strong> +91-9457069346</p>
+        <p><strong>Email:</strong> trip20holidays@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.trip20holidays.com/" target="_blank">www.trip20holidays.com</a></p>
+      </div>
+
+      <div class="card">
+        <h3 style="color: white;">KC STAR CELEBRITIES</h3>
+        <p><strong>Phone:</strong> +91-9457067440</p>
+        <p><strong>Email:</strong> kcstarcelebrities@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.kcstarcelebrities.com" target="_blank">www.kcstarcelebrities.com</a></p>
+      </div>
+
+      <div class="card">
+        <h3 style="color: white;">TWIN PARK PROPERTIES</h3>
+        <p><strong>Phone:</strong> +91-7579644772</p>
+        <p><strong>Email:</strong> twinparkproperties@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.twinparkproperties.com" target="_blank">www.twinparkproperties.com</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<hr style="color: orangered;">
+
+  <section id="gallery" style="background:#000;">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="khushbu8.jpg"></div>
+        <div class="gallery-item"><img src="khushbu7.jpg"></div>
+        <div class="gallery-item"><img src="khushbu9.jpg"></div>
+        <div class="gallery-item"><img src="khushbu1.jpg"></div>
+        <div class="gallery-item"><img src="khushbu10.jpg"></div>
+        <div class="gallery-item"><img src="khushbu6.jpg"></div>
+        <div class="gallery-item"><img src="khushbu3.jpg"></div>
+        <div class="gallery-item"><img src="photo.jpg"></div>
+        <div class="gallery-item"><img src="photo1.jpg"></div>
+        <div class="gallery-item"><img src="photo3.jpg"></div>
+        <div class="gallery-item"><img src="photo4.jpg"></div>
+        <div class="gallery-item"><img src="photo5.jpg"></div>
+        <div class="gallery-item"><img src="photo6.jpg"></div>
+        <div class="gallery-item"><img src="photo7.jpg"></div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+
+
+     
+            <section id="profile" style="padding:140px 0; background:#111; position:relative; overflow:hidden;">
+  <!-- Orange accent line on top -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(90deg, transparent, #ff6b00, transparent);"></div>
+
+  <div class="container">
+    <h2 class="section-title" style="font-size:56px; color:#ff6b00; margin-bottom:20px; text-align:center;">
+      Company Profile
+    </h2>
+    <p style="text-align:center; font-size:20px; color:#cccccc; max-width:900px; margin:0 auto 80px;">
+      Explore our journey, vision, and achievements through our official profile materials.
+    </p>
+
+    <!-- GRID: PDF Card + Video Card -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(480px, 1fr)); gap:50px; max-width:1400px; margin:0 auto;">
+      
+      <!-- PDF DOWNLOAD CARD -->
+      <div style="background:#1a1a1a; border-radius:28px; overflow:hidden; position:relative; 
+                  border:3px solid transparent; box-shadow:0 25px 70px rgba(0,0,0,0.6);
+                  transition:transform 0.4s ease;">
+        <!-- Orange border glow -->
+        <div style="position:absolute; inset:0; border:2px solid #ff6b00; border-radius:28px; opacity:0.6;"></div>
+
+        <div style="padding:50px 40px; text-align:center; position:relative; z-index:2;">
+          <i class="fas fa-file-pdf" style="font-size:90px; color:#ff6b00; margin-bottom:25px;"></i>
+          <h3 style="font-size:28px; color:#ff6b00; margin-bottom:18px;">Official Company Profile (PDF)</h3>
+          <p style="color:#bbbbbb; font-size:17px; line-height:1.8; margin-bottom:30px;">
+            Download our complete corporate brochure with detailed information about our group, services, leadership, and success stories.
+          </p>
+
+          <!-- WORKING PDF DOWNLOAD -->
+          <a href="company-profile (1).pdf" download 
+             style="background:#ff6b00; color:white; padding:18px 50px; border-radius:50px; 
+                    font-size:19px; font-weight:bold; text-decoration:none; display:inline-block;
+                    box-shadow:0 15px 40px rgba(255,107,0,0.5); transition:all 0.4s;">
+            Download PDF Profile
+          </a>
+        </div>
+      </div>
+
+        
+<!-- VIDEO PROFILE CARD -->
+<div style="background:#1a1a1a; border-radius:28px; overflow:hidden; position:relative;
+            border:3px solid transparent; box-shadow:0 25px 70px rgba(0,0,0,0.6);
+            transition:transform 0.4s ease;">
+  
+    <div style="padding:40px; text-align:center;">
+      <i class="fas fa-video" style="font-size:70px; color:#ff6b00; margin-bottom:20px;"></i>
+      <h3 style="font-size:28px; color:#ff6b00; margin-bottom:18px;">Official Company Video</h3>
+      <p style="color:#bbbbbb; font-size:17px; line-height:1.8; margin-bottom:30px;">
+        Watch our cinematic introduction featuring our vision, team, and impact across industries.
+      </p> 
+
+      <a href="final video.mp4" download 
+         style="background:#ff6b00; color:white; padding:18px 50px; border-radius:50px; 
+                font-size:19px; font-weight:bold; text-decoration:none; display:inline-block;
+                box-shadow:0 15px 40px rgba(255,107,0,0.5); transition:all 0.4s; margin:8px;">
+        Download Video (MP4)
+      </a>
+      <br>
+
+      <a href="https://youtube.com/@khushbuchauhangroup?si=1H-KlbZIc5uXdtZO" target="_blank"
+         style="color:#ff6b00; font-size:16px; text-decoration:none; margin-top:15px; display:inline-block;">
+        Watch on YouTube
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+  <section id="services" style="background:black; color: orangered;">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="grid">
+        <div class="card">FINANCIAL </div>
+        <div class="card">LEGAL FIRM </div>
+        <div class="card">CA  FIRM  </div>
+        <div class="card">FILM  PRODUCTION  </div>
+        <div class="card">POLITICIAL   </div>
+        <div class="card">Travel & visa  </div>
+        <div class="card">Celebrities Endorsement</div>
+        <div class="card">Real Estate</div>
+        <div class="card">Business consulting</div>
+        <div class="card">HR & recruitment</div>
+        <div class="card">Corporate event management</div>
+         <div class="card">Cruise & Luxury Travel </div>
+          <div class="card">Religious & Spiritual Tours </div>
+           <div class="card">Digital Marketing  </div>
+            <div class="card">AI & automation </div>
+             <div class="card">Personality development  </div>
+        <div class="card">Event decoration & wedding planning</div>
+              <div class="card">Social media management </div> 
+              <div class="card">Luxury event experiences  </div>
+                 <div class="card">Jewellery business   </div>
+                <div class="card">Media buying    </div>
+                 <div class="card">Restaurant consulting   </div>
+                  <div class="card">Corporate funding arrangements   </div>
+                   <div class="card">Investor tie-ups </div>
+                    <div class="card">Solar energy projects </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US – 8 REASONS (ORANGE FIRE EDITION) -->
+
+<section id="why" style="background:#111; padding:0px ; position:relative; overflow:hidden;">
+  <!-- Epic Background Glow -->
+  <div style="position:absolute; top:0px; left:50%; transform:translateX(-50%); width:1200px; height:1000px;
+              background:radial-gradient(circle, rgba(255,102,0,0.2) 0%, transparent 65%);
+              border-radius:50%; pointer-events:none; animation:glowPulse 8s infinite;"></div>
+
+ 
+<section class="why-choose">
+  <div class="container">
+
+    <h2 class="section-title">
+      Why Choose Khushbu Chauhan Group?
+    </h2>
+
+    <div class="why-grid">
+
+      <!-- 1 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-layer-group"></i></div>
+  <h3>Multi-Industry Expertise</h3>
+  <p>A single powerful group delivering excellence across Finance, Real Estate, Entertainment, Travel, Media & Political Campaigns</p>
+</div>
+
+<!-- 2 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-handshake"></i></div>
+  <h3>Trust & Transparency</h3>
+  <p>Integrity drives everything we do — honest dealings, clear communication, and results you can rely on</p>
+</div>
+
+<!-- 3 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-lightbulb"></i></div>
+  <h3>Winning Innovation</h3>
+  <p>Bold ideas, smart execution, and modern strategies designed to lead and dominate markets</p>
+</div>
+
+<!-- 4 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-network-wired"></i></div>
+  <h3>Powerful Network</h3>
+  <p>Strong, high-level connections across India — where relationships truly convert into results</p>
+</div>
+
+<!-- 5 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-users"></i></div>
+  <h3>Personal Leadership Access</h3>
+  <p>Direct involvement of MD Ms. Khushbu Chauhan — your goals receive focused, hands-on attention</p>
+</div>
+
+<!-- 6 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-trophy"></i></div>
+  <h3>Proven Success</h3>
+  <p>A strong portfolio of successful projects, celebrity collaborations, and impactful political campaigns</p>
+</div>
+
+<!-- 7 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-rocket"></i></div>
+  <h3>Rapid Execution</h3>
+  <p>Speed meets precision — transforming ideas into measurable outcomes faster than the competition</p>
+</div>
+
+<!-- 8 -->
+<div class="why-card">
+  <div class="icon-glow"><i class="fas fa-shield-alt"></i></div>
+  <h3>Absolute Confidentiality</h3>
+  <p>Your data, strategies, and business interests are safeguarded with the highest level of discretion</p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* EPIC ORANGE GLOW CARDS */
+@media (max-width: 768px) {
+  .why-card { padding: 45px 30px; }
+  .icon-glow { width: 90px; height: 90px; font-size: 40px; }
+  .why-card h3 { font-size: 24px; }
+}
+.full-width-footer {
+  width: 100%;
+  background: #111;
+  text-align: center;
+  padding: 60px 20px;
+  border-top: 4px solid #ff6b00;
+}
+
+.full-width-footer p {
+  font-size: 19px;
+  color: #aaa;
+  margin: 8px 0;
+}
+
+.full-width-footer .tagline {
+  font-size: 30px;
+  color: #ff6b00;
+  font-weight: bold;
+  margin: 25px 0 35px;
+}
+
+.full-width-footer .social-icons a {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+.full-width-footer .social-icons a:hover {
+  color: #ff6b00;
+  transform: scale(1.2);
+}
+
+
+</style>
+
+  <section id="vision-mission" class="full-width" style="background:#111; padding:140px 0;">
+      <div style="max-width:1400px; margin:0 auto; padding:0 20px;">
+        <h2 class="section-title" style="color:#fff; font-size:58px;">Vision & Mission</h2>
+        <p style="font-size:32px; color:#ff7a00; text-align:center; font-weight:bold; margin:30px 0 70px;">
+          “Network is Networth”
+        </p>
+        <div class="welcome-container">
+          <div class="box">
+            <h2 style="color:#ff6b00;">Our Mission</h2>
+            <p style="color:#333; font-size:17px;">To empower individuals and businesses through ethical leadership, innovative solutions, and sustainable growth.</p>
+          </div>
+          <div class="middle-image">
+            <img src="vission and mission.png" alt="Vision & Mission">
+          </div>
+          <div class="box">
+            <h2 style="color:#ff6b00;">Our Vision</h2>
+            <p style="color:#333; font-size:17px;">To contribute significantly to India’s economic and social development by driving excellence across industries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <div style="background:linear-gradient(135deg,var(--orange),#cc5200); padding:80px; border-radius:35px; max-width:900px; margin:0 auto; text-align:center; box-shadow:0 30px 70px rgba(255,102,0,0.6);">
+        <h2 style="font-size:42px; color:white; margin-bottom:30px;">Get In Touch</h2>
+        <p style="font-size:18px; color:white;"><strong>Phone:</strong> +91 94857 32466</p>
+        <p style="font-size:18px; color:white;"><strong>Email:</strong> khushbuchauhangroup@gmail.com</p>
+        <p style="font-size:18px; color:white;"><strong>Address:</strong>  New Delhi, India, 110001</p>
+        <a href="https://whatsapp.com/channel/0029VbCHLQm4Y9lhP1stQg3y" style="background:white;color:#111;padding:18px 50px;border-radius:50px;display:inline-block;margin-top:30px;font-weight:bold;font-size:18px;">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="full-width">
+      <p style="font-size:19px; color:#aaa;">© 2025 Khushbu Chauhan Group. All Rights Reserved.</p>
+      <p style="font-size:28px; color:var(--orange); margin:30px 0; font-weight:bold;">
+        “Network is Networth”
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1CYC7p22pE/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/officialkhushbuchauhangroup" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/khushbuchauhangroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com/@khushbuchauhangroup" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/Khushbu39891" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://linktr.ee/Khushbu_kcg" target="_blank"><i class="fas fa-link"></i></a>
+        <a href="https://www.threads.net/@officialkhushbuchauhangroup" target="_blank"><i class="fab fa-threads"></i></a>
+      </div>
+    </footer>
+
+  </main>
+
+<!-- Phone -->
+<a href="tel:+919485732466" class="phone" target="_blank">
+  <i class="fa-solid fa-phone"></i>
+  <span class="popup-label">Call Now</span>
+</a>
+
+<!-- WhatsApp -->
+<a href="https://whatsapp.com/channel/0029VbCHLQm4Y9lhP1stQg3y" class="whatsapp" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="popup-label">Chat on WhatsApp</span>
+</a>
+
+  <script>
+    // Mobile Menu
+    document.getElementById('mobileMenu').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+
+    // Active link on scroll + smooth scroll
+    window.addEventListener('scroll', () => {
+      let current = '';
+      document.querySelectorAll('section').forEach(section => {
+        if (window.scrollY >= section.offsetTop - 200) current = section.id;
+      });
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        if (window.innerWidth <= 868) {
+          document.getElementById('navLinks').classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
