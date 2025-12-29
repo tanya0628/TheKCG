@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Khushbu Chauhan Group | Delhi</title>
   <link rel="stylesheet" href="main.css">
+   <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+        
+      />
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     :root { --orange: #ff6600; --dark: #0a0a0a; }
@@ -12,124 +19,8 @@
     body { font-family: 'Segoe UI', Arial, sans-serif; background: black; color: #aea5a5; line-height: 1.8; overflow-x: hidden; }
     .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
 
-    /* Header & Navbar */
-/* PERFECT FIXED HEADER – NO EXTRA HEIGHT */
-/* header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;                    
-  background: rgba(15, 15, 15, 0.96);
-  backdrop-filter: blur(15px);
-  z-index: 1000;
-  padding: 15px 0;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-  transition: all 0.4s ease;
-} */
-
-/* Optional: Shrink header on scroll (very modern) */
-/* header.scrolled {
-  height: 80px;
-  padding: 10px 0;
-  background: rgba(10, 10, 10, 0.98);
-}
-
-nav {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 30px;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo + Text Perfectly Aligned */
-/* .logo-area {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.logo-area img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: contain;
-  border: 4px solid var(--orange);
-  box-shadow: 0 8px 25px rgba(255, 102, 0, 0.4);
-  transition: all 0.3s;
-}
-
-header.scrolled .logo-area img {
-  width: 58px;
-  height: 58px;
-  
-}
-
-.logo-text h1 {
-  font-size: 18px;
-  color: var(--orange);
-  font-weight: bold;
-  margin: 0;
-  line-height: 1;
-}
-
-.logo-text span {
-  font-size: 13px;
-  color: #9e8383;
-  display: block;
-  margin-top: 4px; */
- 
-
-/* Nav Links – Perfect Spacing */
-/* .nav-links {
-  display: flex;
-  gap: 45px;
-  list-style: none;
-}
-
-.nav-links a {
-  color: #eee;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14.5px;
-  padding: 10px 5px;
-  position: relative;
-  transition: 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--orange);
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 3px;
-  background: var(--orange);
-  transition: 0.4s;
-  transform: translateX(-50%);
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 90%;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 28px;
-  color: rgb(189, 183, 183);
-} */
-
-    section { padding: 120px 0; }
+    
+      section { padding: 120px 0; }
     .section-title {
       font-size: 48px; color: var(--orange); text-align: center; margin-bottom: 70px;
       position: relative; padding-bottom: 20px;
@@ -376,222 +267,53 @@ background-color: #aea5a5;
 </head>
 <body>
 
- 
 
- <!-- Vertical Sidebar Navigation -->
-<aside class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <img src="khushbu_logo-removebg-preview.png" alt="Khushbu Chauhan Group" style="width: 100px; height: 100px;" class="sidebar-logo">
-    <!-- <div class="logo-text-small">KCG</div> -->
+<!-- navbar -->
+<header class="sticky navbar">
+  <a href="#" class="logo">
+    <img src="khushbu_logo-removebg-preview.png" alt="Logo" />
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-item active">Home</a></li>
+    <li><a href="#welcome" class="nav-item">Welcome</a></li>
+    <li><a href="#about" class="nav-item">About Us</a></li>
+    <li><a href="#group" class="nav-item">Group of Companies</a></li>
+    <li><a href="#gallery" class="nav-item">Gallery</a></li>
+    <li><a href="#Vision-Mission" class="nav-item">Vision & Mission</a></li>
+    <li><a href="#why" class="nav-item">Why Us</a></li>
+    <li><a href="#profile" class="nav-item">Company Profile</a></li>
+    <li><a href="#services" class="nav-item">Business Services</a></li>
+    <li><a href="#contact" class="nav-item">Contact Us</a></li>
+  </ul>
+
+  <div class="menu-btn">
+    <i class="ri-menu-line"></i>
   </div>
-
-  <!-- 3-Dot Menu Toggle (Visible on Desktop & Mobile) -->
-  <div class="menu-toggle-dots" id="toggleSidebar">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-
-  <nav class="sidebar-nav">
-    <ul>
-      <li><a href="#home" class="nav-item active"><span>Home</span></a></li>
-      <li><a href="#welcome" class="nav-item"><span>Welcome</span></a></li>
-      <li><a href="#about" class="nav-item"><span>About Us</span></a></li>
-      <li><a href="#group" class="nav-item"><span>Group of Companies</span></a></li>
-      <li><a href="#gallery" class="nav-item"><span>Gallery</span></a></li>
-      <li><a href="#Vision-Mission" class="nav-item"><span>Vision & Mission</span></a></li>
-      <li><a href="#why" class="nav-item"><span>Why Us</span></a></li>
-      <li><a href="#profile" class="nav-item"><span>Company Profile</span></a></li>
-      <li><a href="#services" class="nav-item"><span>Business Services</span></a></li>
-      <li><a href="#contact" class="nav-item"><span>Contact Us</span></a></li>
-    </ul>
-  </nav>
-</aside>
-
-<!-- Overlay when sidebar is collapsed (optional) -->
-<div class="sidebar-overlay" id="overlay"></div>
-<style>
-  /* Modern Header Styles */
-
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 280px;
-  /* background: linear-gradient(180deg, #1a1a1a 0%, #111 100%); */
-
-  background-color: transparent;
-  color: #fff;
-  z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 8px 0 30px rgba(0,0,0,0.3);
-}
-
-.sidebar.collapsed {
-  width: 80px;
-}
-
-.sidebar-header {
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 1px solid #333;
-}
-
-.sidebar-logo {
-  height: 70px;
-  width: auto;
-  filter: brightness(0) invert(1);
-  transition: all 0.3s;
-}
-
-.logo-text-small {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #ff6b35; /* Orange */
-  margin-top: 10px;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.sidebar.collapsed .logo-text-small {
-  opacity: 0;
-}
-
-.sidebar.collapsed .sidebar-logo {
-  height: 50px;
-}
-
-
-/* 3-Dot Toggle */
-.menu-toggle-dots {
-  position: absolute;
-  top: 50%;
-  right: -15px;
-  transform: translateY(-50%);
-  background: #ff6b35;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-  z-index: 1001;
-  transition: all 0.3s;
-}
-
-.menu-toggle-dots:hover {
-  background: #e55a2b;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.dot {
-  width: 6px;
-  height: 6px;
-  background: white;
-  border-radius: 50%;
-  margin: 0 3px;
-}
-
-/* Navigation */
-.sidebar-nav ul {
-  list-style: none;
-  padding: 30px 0;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  padding: 14px 24px;
-  color: #ccc;
-  text-decoration: none;
-  transition: all 0.3s;
-  position: relative;
-}
-
-.nav-item span {
-  margin-left: 16px;
-  font-weight: 500;
-  white-space: nowrap;
-  transition: opacity 0.3s;
-}
-
-.nav-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #ff6b35;
-  transform: scaleY(0);
-  transition: transform 0.3s;
-}
-
-.nav-item:hover,
-.nav-item.active {
-  background: rgba(255, 107, 53, 0.15);
-  color: #ff6b35;
-}
-
-.nav-item:hover::before,
-.nav-item.active::before {
-  transform: scaleY(1);
-}
-
-.sidebar.collapsed .nav-item span {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.sidebar.collapsed .nav-item {
-  justify-content: center;
-  padding: 18px 0;
-}
-
-/* Overlay */
-.sidebar-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
-.sidebar-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Main content shift when sidebar open */
-.main-content {
-  margin-left: 280px;
-  transition: margin-left 0.4s;
-}
-
-.sidebar.collapsed ~ .main-content {
-  margin-left: 80px;
-}
-.section1-title{
-  text-align: center;
-  color: orangered;
-
-}
-</style>
+</header>
 <script>
-document.getElementById('toggleSidebar').addEventListener('click', function() {
-  document.querySelector('.sidebar').classList.toggle('collapsed');
-  document.querySelector('.sidebar-overlay').classList.toggle('active');
-});
+  const menuBtn = document.querySelector(".menu-btn");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 </script>
-  <!-- ALL SECTIONS WITH CORRECT IDs -->
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
   <section class="hero" id="home">
   <div class="container">
     <h1>“NETWORK IS NETWORTH”</h1>
@@ -616,8 +338,8 @@ document.getElementById('toggleSidebar').addEventListener('click', function() {
     <div style="display:flex; align-items:center; gap:80px; flex-wrap:wrap; max-width:1400px; margin:0 auto;">
       
       <!-- LEFT SIDE – CONTENT -->
-      <div style="flex:1; min-width:320px; color:#e0e0e0; text-align:center;">
-        <h2 style="font-size:48px; color:#ff6b00; margin-bottom:25px; font-weight:800; line-height:1.2;">
+      <div style="flex:1; min-width:320px; color:#e0e0e0;">
+        <h2 style="font-size:48px; color: #ff6b00; margin-bottom:25px; font-weight:800; line-height:1.2;">
           Welcome to <span style="color:#ff9a44;">Khushbu Chauhan Group</span>
         </h2>
         
@@ -661,7 +383,7 @@ document.getElementById('toggleSidebar').addEventListener('click', function() {
         <div style="position:absolute; bottom:-20px; left:50%; transform:translateX(-50%);
                     background:#ff6b00; color:white; padding:12px 35px; border-radius:50px;
                     font-weight:bold; font-size:18px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
-          MD & Director
+          MD & DIRECTOR
         </div>
       </div>
     </div>
@@ -825,6 +547,23 @@ document.getElementById('toggleSidebar').addEventListener('click', function() {
         <p><strong>Website:</strong> <a href="https://www.twinparkproperties.com" target="_blank">www.twinparkproperties.com</a></p>
       </div>
 
+
+      <!-- FORMALE -->
+        <div class="card">
+        <h3 style="color: white;">FORMALE SUIT</h3>
+        <p><strong>Phone:</strong> +91-7982649783</p>
+        <p><strong>Email:</strong> formalesuit@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.kctaxwealth.com" target="_blank">www.kctaxwealth.com</a></p>
+      </div>
+
+<!-- SECOND -->
+  <div class="card">
+        <h3 style="color: white;">KHUSHBU CHAUHAN</h3>
+        <p><strong>Phone:</strong> +91-9116936360</p>
+        <p><strong>Email:</strong> kctaxkhushbuchauhan@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.khushbuchauhan.com/" target="_blank">www.khushbuchauhan.com</a></p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -871,36 +610,57 @@ document.getElementById('toggleSidebar').addEventListener('click', function() {
       Explore our journey, vision, and achievements through our official profile materials.
     </p>
 
+       <!-- business profile -->
+     <div class="profile">
+        
+        <div class="video-container">
+<video src="final video.mp4" controls loop></video>
+<div style="display: flex;  flex-direction: row; justify-content: space-between;">
+   <a href="img/Black And White Minimalistic Modern Clean Portrait Business Card.pdf" download>
+    <button class="btn">
+        Download Our Card
+    </button>
+</a>
+<a href="company-profile (1).pdf" download>
+    <button class="btn">
+        Download Our PDF
+    </button>
+</a>
+</div>
+</div>
+
+     </div>
+
     <!-- GRID: PDF Card + Video Card -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(480px, 1fr)); gap:50px; max-width:1400px; margin:0 auto;">
+    <!-- <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(480px, 1fr)); gap:50px; max-width:1400px; margin:0 auto;"> -->
       
       <!-- PDF DOWNLOAD CARD -->
-      <div style="background:#1a1a1a; border-radius:28px; overflow:hidden; position:relative; 
+      <!-- <div style="background:#1a1a1a; border-radius:28px; overflow:hidden; position:relative; 
                   border:3px solid transparent; box-shadow:0 25px 70px rgba(0,0,0,0.6);
-                  transition:transform 0.4s ease;">
+                  transition:transform 0.4s ease;"> -->
         <!-- Orange border glow -->
-        <div style="position:absolute; inset:0; border:2px solid #ff6b00; border-radius:28px; opacity:0.6;"></div>
+        <!-- <div style="position:absolute; inset:0; border:2px solid #ff6b00; border-radius:28px; opacity:0.6;"></div>
 
         <div style="padding:50px 40px; text-align:center; position:relative; z-index:2;">
           <i class="fas fa-file-pdf" style="font-size:90px; color:#ff6b00; margin-bottom:25px;"></i>
           <h3 style="font-size:28px; color:#ff6b00; margin-bottom:18px;">Official Company Profile (PDF)</h3>
           <p style="color:#bbbbbb; font-size:17px; line-height:1.8; margin-bottom:30px;">
-            Download our complete corporate brochure with detailed information about our group, services, leadership, and success stories.
-          </p>
+            Download our complete corporate brochure with detailed information about our group, services, leadership, and success stories. -->
+          <!-- </p> -->
 
           <!-- WORKING PDF DOWNLOAD -->
-          <a href="company-profile (1).pdf" download 
+          <!-- <a href="company-profile (1).pdf" download 
              style="background:#ff6b00; color:white; padding:18px 50px; border-radius:50px; 
                     font-size:19px; font-weight:bold; text-decoration:none; display:inline-block;
                     box-shadow:0 15px 40px rgba(255,107,0,0.5); transition:all 0.4s;">
             Download PDF Profile
           </a>
         </div>
-      </div>
+      </div> -->
 
         
 <!-- VIDEO PROFILE CARD -->
-<div style="background:#1a1a1a; border-radius:28px; overflow:hidden; position:relative;
+<!-- <div style="background:#1a1a1a; border-radius:28px; overflow:hidden; position:relative;
             border:3px solid transparent; box-shadow:0 25px 70px rgba(0,0,0,0.6);
             transition:transform 0.4s ease;">
   
@@ -917,16 +677,16 @@ document.getElementById('toggleSidebar').addEventListener('click', function() {
                 box-shadow:0 15px 40px rgba(255,107,0,0.5); transition:all 0.4s; margin:8px;">
         Download Video (MP4)
       </a>
-      <br>
+      <br> -->
 
-      <a href="https://youtube.com/@khushbuchauhangroup?si=1H-KlbZIc5uXdtZO" target="_blank"
+      <!-- <a href="https://youtube.com/@khushbuchauhangroup?si=1H-KlbZIc5uXdtZO" target="_blank"
          style="color:#ff6b00; font-size:16px; text-decoration:none; margin-top:15px; display:inline-block;">
         Watch on YouTube
       </a>
     </div>
   </div>
 </div>
-
+ -->
 
 
   <section id="services" style="background:black; color: orangered;">
@@ -1190,5 +950,4 @@ document.getElementById('toggleSidebar').addEventListener('click', function() {
     });
   </script>
 </body>
-
 </html>
