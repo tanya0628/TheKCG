@@ -314,15 +314,78 @@ background-color: #aea5a5;
 
 
 
-  <section class="hero" id="home">
-  <div class="container">
-    <h1>“NETWORK IS NETWORTH”</h1>
+ <section class="hero" id="home" style="position: relative; height: 100vh; overflow: hidden;">
 
-    <div class="hero-buttons">
-      <a href="#business" class="btn" style="color: #000;">Business Setup</a>
-      <a href="#group" class="btn" style="color: #000;">Explore Group of Companies</a>
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline 
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    ">
+    <source src="bg video.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay (dark for readability) -->
+  <div style="
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+  "></div>
+
+  <!-- Content -->
+  <div class="container" style="
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  ">
+
+    <h1 style="color:#fff; font-size: 48px; text-align:center; margin-bottom: 30px;">
+      “NETWORK IS <span style="color:#ff4500;">NETWORTH</span>”
+    </h1>
+
+    <div class="hero-buttons" style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+      
+      <a href="#business" class="btn" style="
+        background:#ff4500;
+        color:#000;
+        padding:12px 25px;
+        border-radius:30px;
+        text-decoration:none;
+        font-weight:600;
+        box-shadow:0 0 15px rgba(255,69,0,0.6);
+      ">
+        Business Setup
+      </a>
+
+      <a href="#group" class="btn" style="
+        background:#fff;
+        color:#000;
+        padding:12px 25px;
+        border-radius:30px;
+        text-decoration:none;
+        font-weight:600;
+      ">
+        Explore Group of Companies
+      </a>
+
     </div>
+
   </div>
+
 </section>
 
 
@@ -562,6 +625,13 @@ background-color: #aea5a5;
         <p><strong>Phone:</strong> +91-9116936360</p>
         <p><strong>Email:</strong> kctaxkhushbuchauhan@gmail.com</p>
         <p><strong>Website:</strong> <a href="https://www.khushbuchauhan.com/" target="_blank">www.khushbuchauhan.com</a></p>
+      </div>
+
+       <div class="card">
+        <h3 style="color: white;">Business Voice</h3>
+        <p><strong>Phone:</strong> +91-7982649783</p>
+        <p><strong>Email:</strong> businessvoicesetup@gmail.com</p>
+        <p><strong>Website:</strong> <a href="https://www.businessvoice.live/" target="_blank">www.businessvoice.live</a></p>
       </div>
 
     </div>
